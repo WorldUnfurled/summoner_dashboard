@@ -1,0 +1,30 @@
+#grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "sidebar main";
+  grid-gap: 10px 10px;
+  justify-content: center;
+  grid-template-columns: 300px 700px;
+  border: 1px solid blue;
+}
+
+.content {
+  border: 1px solid red;
+}
+
+#header {
+  height: 200px;
+  grid-area: header;
+}
+
+#sidebar {
+  height: 700px;
+  grid-area: sidebar;
+}
+
+#main-content {
+  height: 700px;
+  grid-area: main;
+}
