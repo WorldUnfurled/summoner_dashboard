@@ -21,6 +21,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("img/worlds_2021_banner_0.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 #sidebar {
