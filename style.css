@@ -17,11 +17,28 @@
 #header {
   height: 200px;
   grid-area: header;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #sidebar {
   height: 700px;
   grid-area: sidebar;
+}
+
+#rank-info {
+  height: 100px;
+  width: 100%;
+  border: 1px solid blue;
+}
+
+#game-info {
+  height: 400px;
+  width: 100%;
+  border: 1px solid blue;
+  margin-top: 10px;
 }
 
 #main-content {

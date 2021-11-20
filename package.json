@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/WorldUnfurled/summoner_dashboard/issues"
   },
-  "homepage": "https://github.com/WorldUnfurled/summoner_dashboard#readme"
+  "homepage": "https://github.com/WorldUnfurled/summoner_dashboard#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
 }
