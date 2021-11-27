@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab:wght@300&display=swap");
+
 #grid-container {
   display: grid;
   grid-template-areas:
@@ -8,14 +12,6 @@
   justify-content: center;
   grid-template-columns: 300px 700px;
   border: 1px solid blue;
-}
-
-p {
-  margin: 0;
-  font-size: 0.8rem;
-  color: white;
-  background-color: rgb(52, 63, 241);
-  padding: 3px;
 }
 
 #header {
@@ -50,6 +46,16 @@ p {
   justify-content: space-around;
 }
 
+.profile_data_container p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: white;
+  background-color: rgb(52, 63, 241);
+  padding: 3px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 2px;
+}
+
 .header-item-3 {
   display: flex;
   flex-basis: 100%;
@@ -59,6 +65,15 @@ p {
 
 .header-item-3 > * {
   width: 60%;
+}
+
+.header-item-3 p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: white;
+  background-color: rgb(52, 63, 241);
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
 }
 
 #sidebar {
