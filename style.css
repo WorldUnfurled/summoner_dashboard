@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab:wght@300&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
 #grid-container {
   display: grid;
   grid-template-areas:
@@ -52,7 +54,7 @@
   color: white;
   background-color: rgb(52, 63, 241);
   padding: 3px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Work Sans", sans-serif;
   border-radius: 2px;
 }
 
@@ -73,7 +75,8 @@
   color: white;
   background-color: rgb(52, 63, 241);
   padding: 5px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.25;
 }
 
 #sidebar {
@@ -100,15 +103,21 @@
   align-items: center;
 }
 
+.rank-data-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
 #rank-image {
   height: 100%;
 }
 
 #rank-info {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  color: rgb(52, 63, 241);
+  font-family: "Work Sans";
 }
 
 .game-info {

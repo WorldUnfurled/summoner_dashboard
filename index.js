@@ -1,4 +1,5 @@
 const rankInfo = document.getElementById("rank-info");
+const rankWR = document.getElementById("rank-wr");
 const rankImg = document.getElementById("rank-image");
 const api_key = "RGAPI-b3ae3281-0065-4631-800e-a20e4f55dec1";
 
@@ -20,8 +21,18 @@ fetch(
             data[0].tier +
             " " +
             data[0].rank +
-            " " +
+            " / " +
             data[0].leaguePoints +
-            "LP") && (rankImg.src = "img/ranks/" + "Gold_4.png")
+            "LP") &&
+          (rankWR.textContent =
+            data[0].wins +
+            " Wins" +
+            " / " +
+            data[0].losses +
+            " Losses" +
+            " (" +
+            Math.round((data[0].wins / (data[0].wins + data[0].losses)) * 100) +
+            "%)") &&
+          (rankImg.src = "img/ranks/" + "Gold_4.png")
       )
   );
