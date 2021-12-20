@@ -94,6 +94,23 @@
   flex: 1 1 auto;
 }
 
+.rank-data-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rank-image {
+  height: 100%;
+}
+
+#rank-info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
 .game-info {
   height: 400px;
   width: 100%;
