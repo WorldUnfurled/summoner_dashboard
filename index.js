@@ -1,4 +1,5 @@
 const rankInfo = document.getElementById("rank-info");
+const rankImg = document.getElementById("rank-image");
 const api_key = "RGAPI-b3ae3281-0065-4631-800e-a20e4f55dec1";
 
 fetch(
@@ -21,6 +22,6 @@ fetch(
             data[0].rank +
             " " +
             data[0].leaguePoints +
-            "LP")
+            "LP") && (rankImg.src = "img/ranks/" + "Gold_4.png")
       )
   );
