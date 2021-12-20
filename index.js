@@ -17,7 +17,6 @@ fetch(
       .then(
         (data) =>
           (rankInfo.textContent =
-            "Rank: " +
             data[0].tier +
             " " +
             data[0].rank +
@@ -33,6 +32,7 @@ fetch(
             " (" +
             Math.round((data[0].wins / (data[0].wins + data[0].losses)) * 100) +
             "%)") &&
-          (rankImg.src = "img/ranks/" + "Gold_4.png")
+          (rankImg.src =
+            "img/ranks/" + data[0].tier + "_" + data[0].rank + ".png")
       )
   );
