@@ -1,5 +1,5 @@
-const header = document.getElementById("header");
-const api_key = "RGAPI-a073e1a7-9652-4c89-83d2-de84757be48b";
+const rankInfo = document.getElementById("rank-info");
+const api_key = "RGAPI-b3ae3281-0065-4631-800e-a20e4f55dec1";
 
 fetch(
   // Summoner by name
@@ -12,5 +12,15 @@ fetch(
       `https://na1.api.riotgames.com/lol/league/v4/entries/by-summoner/${data.id}?api_key=${api_key}`
     )
       .then((res) => res.json())
-      .then((data) => (header.textContent = data[0].tier))
+      .then(
+        (data) =>
+          (rankInfo.textContent =
+            "Rank: " +
+            data[0].tier +
+            " " +
+            data[0].rank +
+            " " +
+            data[0].leaguePoints +
+            "LP")
+      )
   );
