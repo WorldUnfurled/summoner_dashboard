@@ -1,7 +1,7 @@
 const rankInfo = document.getElementById("rank-info");
 const rankWR = document.getElementById("rank-wr");
 const rankImg = document.getElementById("rank-image");
-const api_key = "RGAPI-f734b78c-ca06-47c0-9891-eff0413f1b9c";
+const api_key = "RGAPI-3577c6c5-79cf-4c6c-ba12-d21eec73ddc1";
 
 fetch(
   // Summoner by name
