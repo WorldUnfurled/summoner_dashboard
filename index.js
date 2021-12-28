@@ -1,7 +1,7 @@
 const rankInfo = document.getElementById("rank-info");
 const rankWR = document.getElementById("rank-wr");
 const rankImg = document.getElementById("rank-image");
-const api_key = "RGAPI-3577c6c5-79cf-4c6c-ba12-d21eec73ddc1";
+const api_key = "RGAPI-14309d6e-6e49-4b0f-8280-282d64033ee2";
 
 fetch(
   // Summoner by name
@@ -33,6 +33,9 @@ fetch(
             Math.round((data[0].wins / (data[0].wins + data[0].losses)) * 100) +
             "%)") &&
           (rankImg.src =
-            "img/ranks/" + data[0].tier + "_" + data[0].rank + ".png")
+            "img/ranks/" + data[0].tier + "_" + data[0].rank + ".png") &&
+          console.log(data)
       )
   );
+
+fetch();
