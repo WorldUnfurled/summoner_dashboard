@@ -1,7 +1,10 @@
+const api_key = "RGAPI-ed7b7717-3adc-43b1-b29b-406b7bf77f02";
+
 const rankInfo = document.getElementById("rank-info");
 const rankWR = document.getElementById("rank-wr");
 const rankImg = document.getElementById("rank-image");
-const api_key = "RGAPI-9e105af1-a5ea-440c-b390-2a877e055c4e";
+
+const userData = document.getElementById("user-data");
 
 fetch(
   // Summoner by name
@@ -16,7 +19,6 @@ fetch(
       .then((res) => res.json())
       .then(
         (data) =>
-          console.log(data) &&
           (rankInfo.textContent =
             data[0].tier +
             " " +
@@ -54,7 +56,12 @@ for (let i = 0; i < 10; i++) {
             `https://americas.api.riotgames.com/lol/match/v5/matches/NA1_4154793253?api_key=${api_key}`
           )
             .then((res) => res.json())
-            .then((data) => console.log(data.info.participants[i]))
+            .then((data) =>
+              data.info.participants[i].summonerId ==
+              "umnYfLV2itnFyXBwFBbBoVCC3Zh9BV37hLRG_lStZLRHukIn"
+                ? (userData.textContent = data.info.participants[i].assists)
+                : console.log("Not")
+            )
         )
     );
 }
